@@ -3,14 +3,15 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { CadCupomPage } from '../pages/cad-cupom/cad-cupom';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    CadCupomPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +20,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CadCupomPage
   ],
   providers: [
     StatusBar,
@@ -27,4 +29,4 @@ import { HomePage } from '../pages/home/home';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {} 
