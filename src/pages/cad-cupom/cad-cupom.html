@@ -5,5 +5,14 @@
 </ion-header>
 
 <ion-content padding>
-teste
+  <ion-item>
+    <ion-label color="primary" floating>* Url</ion-label>
+    <ion-input name="url" [(ngModel)]="url"></ion-input>
+  </ion-item>
+  <button type="submit" ion-button float-right shape="round" color="primary" expand="block" (click)="executar(url)">Executar</button>
+  <br>
+  <br>
+  <br>
+  <div>Resposta:</div>
+
 </ion-content>
