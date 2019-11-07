@@ -26,7 +26,7 @@ export class HomePage {
     this.provedor.listar().then(
       data => {
         console.log(data);
-        this.cupons = data;
+        this.cupons = data; 
       }
     )
   } 
