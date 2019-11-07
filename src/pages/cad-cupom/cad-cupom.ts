@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 
 @IonicPage()
 @Component({
@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class CadCupomPage {
 
   constructor(
-    public http: HttpClient,
+    // public http: HttpClient,
     public navCtrl: NavController,
     public navParams: NavParams
     ) {
@@ -22,14 +22,14 @@ export class CadCupomPage {
 
   executar(url){
     console.log(url);
-    return this.http.get("gs://teste-c17e4.appspot.com/P_20191021_234623.jpg").toPromise()
-    .then(
-      data => {
-        return data['items'];
-      }
-    ).catch(
-      () => []
-    );
-  }
+    // return this.http.get("gs://teste-c17e4.appspot.com/P_20191021_234623.jpg").toPromise()
+    // .then(
+    //   data => {
+    //     return data['items'];
+    //   }
+    // ).catch(
+    //   () => []
+    // );
+  } 
 
 }

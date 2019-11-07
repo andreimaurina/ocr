@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadCupomPage } from '../pages/cad-cupom/cad-cupom';
+import { CupomProvider } from '../providers/cupom/cupom';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CadCupomPage } from '../pages/cad-cupom/cad-cupom';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CupomProvider
   ]
 })
 export class AppModule {} 

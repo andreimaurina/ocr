@@ -7,15 +7,21 @@
 <ion-content padding>
   <ion-searchbar placeholder="Pesquisar..."  (ionInput)="filtrarItens($event)" showCancelButton clearInput></ion-searchbar><!--ajustar função q chama pesquisar -->
   <ion-list>
-    <ion-card *ngFor="let cupom of cupons"  >
+    <ion-item-sliding *ngFor="let cupom of cupons">
       <ion-item>
-        <!-- dados por item -->
+        <h2>{{cupom.ticket}}</h2>
       </ion-item>
-    </ion-card>  
+      <ion-item-options side="left">   
+        <button ion-button (click)="excluir(cupom.id)">Excluir</button>
+      </ion-item-options>
+    </ion-item-sliding>  
   </ion-list>
   <ion-fab bottom right>
-    <button ion-fab color="primary" (click)="novoCupom()"> <!--ajustar função q chama incluir -->
+    <button ion-fab color="primary" (click)="novoCupom()">
       <ion-icon name="add"></ion-icon>
     </button>
   </ion-fab>
+  <ion-fab left bottom>
+    <button ion-fab (click)="adicionar()"><ion-icon name="add"></ion-icon></button> 
+  </ion-fab>   
 </ion-content>
