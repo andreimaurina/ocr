@@ -9,7 +9,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let cupom of cupons">
       <ion-item>
-        <h2>{{cupom.ticket}}</h2>
+        <h2>Ticket: {{cupom.ticket}}</h2>
       </ion-item>
       <ion-item-options side="left">   
         <button ion-button (click)="excluir(cupom.id)">Excluir</button>

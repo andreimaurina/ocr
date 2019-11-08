@@ -4,13 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import * as firebase from 'Firebase';
 export const config = {
-  apiKey: "AIzaSyBnv2FDzNmV3Auz8FlHkkApsgujK6ASTXk",
-  authDomain: "teste-c17e4.firebaseapp.com",
-  databaseURL: "https://teste-c17e4.firebaseio.com",
-  projectId: "teste-c17e4",
-  storageBucket: "teste-c17e4.appspot.com",
-  messagingSenderId: "872085547758",
-  appId: "1:872085547758:web:c41e7b39846d1506"
+  apiKey: "AIzaSyAaFHUxxNdPfGMjBcOJb6ygZ0QiSzMcnqc",
+  authDomain: "ocr-2019-bb841.firebaseapp.com",
+  databaseURL: "https://ocr-2019-bb841.firebaseio.com",
+  projectId: "ocr-2019-bb841",
+  storageBucket: "ocr-2019-bb841.appspot.com",
+  messagingSenderId: "559785322830",
+  appId: "1:559785322830:web:561502e7e6d4ccb0db961f",
+  measurementId: "G-E7XKPFZ5X9"
 };
 firebase.initializeApp(config);
 

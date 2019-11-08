@@ -6,14 +6,14 @@ import { CupomProvider } from '../../providers/cupom/cupom';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
-})
+}) 
 export class HomePage {
 
   cupons=[];
 
   constructor(
     public navCtrl: NavController,
-    public provedor: CupomProvider,
+    public provedor: CupomProvider, 
     public alertCtrl: AlertController
     ) {
   }
